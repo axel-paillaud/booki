@@ -17,6 +17,8 @@ body {
     font-family: raleway;
     max-width: 1440px;
     margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .header {
@@ -27,7 +29,6 @@ body {
 
 .logo {
     width: 61px;
-    padding: 32px;
 }
 
 .nav-ul {
@@ -41,7 +42,7 @@ body {
     padding: 40px;
     border-top-style: solid;
     border-top-color: white;
-    transition: border 0.3s;
+    transition: border 0.3s, color 0.3s;
 }
 
 .nav-ul li:hover {
@@ -49,4 +50,39 @@ body {
     cursor: pointer;
     border-top-style: solid;
     border-top-color: #0065FC;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+p {
+    margin: 8px 0;
+}
+
+.search-container {
+    margin: 20px 0 32px 0;
+    display: flex;
+}
+
+.search-input {
+    height: 48px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    border-left-style: none;
+    border-right-style: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.fa-solid {
+    background-color: #F2F2F2;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
 }
