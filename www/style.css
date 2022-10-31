@@ -1,0 +1,52 @@
+@font-face {
+    font-family: raleway;
+    src: url(font/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(font/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    font-family: raleway;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 61px;
+    padding: 32px;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.nav-ul li {
+    list-style-type: none;
+    padding: 40px;
+    border-top-style: solid;
+    border-top-color: white;
+    transition: border 0.3s;
+}
+
+.nav-ul li:hover {
+    color: #0065FC;
+    cursor: pointer;
+    border-top-style: solid;
+    border-top-color: #0065FC;
+}
