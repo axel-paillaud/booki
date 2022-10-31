@@ -76,6 +76,11 @@ p {
     border-right-style: none;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
+    margin: 0 0 0 16px;
+}
+
+.search-input:focus {
+    
 }
 
 .fa-solid {
@@ -85,4 +90,16 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 15px 0 0 15px;
+}
+
+.search-submit {
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    padding: 14px 16px;
 }
