@@ -157,7 +157,8 @@ p {
 }
 
 .link-card {
-    outline: none;
+    text-decoration: none;
+    color: black;
 }
 
 .card-horizontal-container {
@@ -270,6 +271,7 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 100%;
 }
 
 .card-row {
