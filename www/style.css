@@ -123,7 +123,6 @@ p {
 
 .filter-container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
     font-weight: 700;
@@ -133,12 +132,14 @@ p {
 }
 
 .filter {
+    display: flex;
     margin-left: 32px;
     padding: 16px 24px;
     border-style: solid;
     border-color: #D9D9D9;
     border-width: 2px;
     border-radius: 28px;
+    white-space: nowrap;
 }
 
 .filter:hover {
@@ -248,7 +249,7 @@ p {
 .hospitality-container {
     background-color: #F2F2F2;
     border-radius: 20px;
-    flex: 2;
+    flex: 2 0 66%;
     margin-right: 20px;
     padding: 40px;
 }
@@ -259,6 +260,9 @@ p {
     flex: 1;
     margin-left: 20px;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .title-icon-card-container {
@@ -270,12 +274,19 @@ p {
     color: #0065FC;
 }
 
-.all-card-container {
+.card-title-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 100%;
+}
+
+.all-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 497px;
 }
 
 .card-row {
@@ -338,4 +349,54 @@ p {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 18px;
+}
+
+@media screen and (max-width: 1400px)
+{
+    .card-horizontal-container {
+        margin: 0 8px;
+    }
+
+    .activities-container {
+        margin: 0 8px;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .filter {
+        margin-left: 16px;
+        font-size: 17px;
+    }
+
+    .hospitality-popularity-container {
+        flex-direction: column;
+        height: 957px;
+    }
+
+    .hospitality-container {
+        margin: 0 0 53px 0;
+        height: 626px;
+        flex: 1 0 auto;
+        min-width: 910px;
+    }
+
+    .card-horizontal-container {
+        margin: 0 16px;
+    }
+
+    .popularity-container {
+        margin: 0;
+        min-width: 910px;
+        height: 278px;
+    }
+
+    .all-card-container {
+        flex-direction: row;
+    }
+
+    .card-vertical-container {
+        width: 252px;
+    }
+
 }
