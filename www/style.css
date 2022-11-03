@@ -121,6 +121,19 @@ p {
     padding: 14px 16px;
 }
 
+.filter-title {
+    font-size: 18px;
+}
+
+.all-title-filter-container {
+    display: flex;
+    align-items: center;
+}
+
+.all-filter-container {
+    display: flex;
+}
+
 .filter-container {
     display: flex;
     align-items: center;
@@ -364,6 +377,9 @@ p {
 
 @media screen and (max-width: 992px)
 {
+    h4 {
+        font-size: 14px;
+    }
     .filter {
         margin-left: 16px;
         font-size: 17px;
@@ -372,6 +388,10 @@ p {
     .hospitality-popularity-container {
         flex-direction: column;
         height: 957px;
+    }
+
+    .title-price-card p {
+        font-size: 13px;
     }
 
     .hospitality-container {
@@ -396,7 +416,68 @@ p {
     }
 
     .card-vertical-container {
-        width: 252px;
+        width: 252px; 
     }
 
+    .title-price-star-container {
+        margin: 8px 8px 12px 0;
+    }
+
+    .title-price-card {
+        margin-left: 10px;
+    }
+
+    .activities-container {
+        width: 182px;
+        height: 267px;
+    }
+
+    .img-activity {
+        height: 211px;
+    }
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .main {
+        padding-top: 21px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .nav-ul li {
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        border-top-style: none;
+    }
+
+    .nav-ul li:hover {
+        border-bottom-color: #0065FC;
+        border-bottom-style: solid;
+        border-top-style: none;
+    }
+
+    .all-title-filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .all-filter-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter {
+        margin: 0 14px 17px 0;
+        font-size: 11px;
+        width: 160px;
+    }
 }
