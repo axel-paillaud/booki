@@ -324,10 +324,18 @@ p {
     flex-basis: 33%;
 }
 
-.title-footer-section {
+.footer-section li:first-child {
     margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .footer-section li {
     margin-bottom: 12px;
+}
+
+.title-footer-section {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
 }
