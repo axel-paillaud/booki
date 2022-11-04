@@ -503,6 +503,7 @@ p {
 
     .hospitality-popularity-container {
         flex-direction: column-reverse;
+        height: auto;
     }
 
     .popularity-container {
@@ -516,7 +517,12 @@ p {
 
     .hospitality-container {
         margin: 0;
-        height: 250px;
+        margin-left: -40px;
+        width: 100vw;
+        border-radius: 0;
+        height: auto;
+        min-width: 250px;
+        background-color: white;
     }
 
     .all-card-container {
@@ -526,6 +532,32 @@ p {
 
     .card-vertical-container {
         width: 334px;
+    }
+
+    .card-title-container {
+        flex-direction: column;
+    }
+
+    .card-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-horizontal-container {
+        width: 335px;
+        margin: 0 0 12px 0;
+    }
+
+    .activities-container {
+        width: 334px;
+        margin: 0 0 24px 0;
+    }
+
+    .footer {
+        height: auto;
+        margin: 56px 0 0 -40px;
+        width: 100vw;
+        flex-direction: column;
     }
 
     .desktop {
