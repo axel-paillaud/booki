@@ -131,8 +131,9 @@ p {
 }
 
 
-.filter-title {
+.all-title-filter-container b {
     font-size: 18px;
+    margin-right: 32px;
 }
 
 .all-title-filter-container {
@@ -156,13 +157,13 @@ p {
 
 .filter {
     display: flex;
-    margin-left: 32px;
     padding: 16px 24px;
     border-style: solid;
     border-color: #D9D9D9;
     border-width: 2px;
     border-radius: 28px;
     white-space: nowrap;
+    margin-right: 24px;
 }
 
 .filter:hover {
@@ -390,9 +391,11 @@ p {
     h4 {
         font-size: 14px;
     }
+
     .filter {
-        margin-left: 16px;
-        font-size: 17px;
+        font-size: 14px;
+        padding: 12px 20px;
+        margin-right: 12px;
     }
 
     .hospitality-popularity-container {
@@ -472,29 +475,23 @@ p {
 
     .all-title-filter-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: baseline;
     }
 
     .all-filter-container {
+        display: flex;
         width: 100%;
         justify-content: space-around;
     }
 
     .filter-container {
         flex-direction: column;
-        align-items: flex-start;
-        margin: 18px 0 0 0;
+        align-items: inherit;
+        margin-bottom: 0;
     }
 
     .filter {
-        margin: 0 14px 17px 0;
-        font-size: 11px;
-        width: 168px;
-    }
-
-    .filter:hover {
-        background-color: white;
-        cursor: default;
+        margin-bottom: 16px;
     }
 
     .filter:active {
