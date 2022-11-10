@@ -195,6 +195,7 @@ p {
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 20px;
+    width: 246px;
     height: 208px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -240,6 +241,7 @@ p {
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: 144px;
+    width: 343px;
     transition: 0.3s;
 }
 
