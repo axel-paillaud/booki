@@ -41,6 +41,7 @@ body {
     justify-content: space-between;
     margin: 0;
     list-style-type: none;
+    padding: 0;
 }
 
 .nav-ul li {
@@ -88,7 +89,7 @@ p {
 }
 
 .search-input {
-    height: 54px;
+    height: 56px;
     color: black;
     font-size: 18px;
     font-weight: 700;
@@ -131,17 +132,17 @@ p {
 }
 
 
-.all-title-filter-container b {
+.title-filter-container b {
     font-size: 18px;
     margin-right: 32px;
 }
 
-.all-title-filter-container {
+.title-filter-container {
     display: flex;
     align-items: center;
 }
 
-.all-filter-container {
+.title-filter-container div {
     display: flex;
 }
 
@@ -386,17 +387,72 @@ footer {
     .filter {
         font-size: 14px;
         padding: 12px 20px;
-        margin-right: 12px;
+        margin-right: 8px;
     }
 
+    .title-filter-container b {
+        margin-right: 24px;
+    }
 }
 
 @media screen and (max-width: 768px)
 {
     .main {
-        padding-top: 20px;
+        padding: 20px;
     }
 
+    .header {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-ul {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .nav-ul li {
+        width: 50%;
+        text-align: center;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+    }
+
+    .nav-ul li:hover {
+        border-bottom-color: #0065FC;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-top-color: white;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .title-filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title-filter-container div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filter {
+        width: 48%;
+        padding: 16px;
+        margin-right: 0;
+        white-space: normal;
+    }
+
+    .filter-container  {
+        justify-content: space-between;
+    }
+    
     .desktop {
         display: none;
     }
