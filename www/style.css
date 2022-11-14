@@ -131,6 +131,10 @@ p {
     display: flex;
 }
 
+.show-more {
+    margin: 16px 0 0 0;
+}
+
 
 .title-filter-container b {
     font-size: 18px;
@@ -350,16 +354,16 @@ p {
 
 footer {
     background-color: #F2F2F2;
-    height: 225px;
     margin-top: 60px;
     display: flex;
-    padding: 45px 70px;
+    padding: 45px 70px 24px 70px;
 }
 
 .footer-section {
     list-style-type: none;
     padding: 0;
     flex-basis: 33%;
+    margin: 16px;
 }
 
 .footer-section li:first-child {
@@ -393,12 +397,43 @@ footer {
     .title-filter-container b {
         margin-right: 24px;
     }
+
+    .hospitality-popularity-container {
+        flex-direction: column;
+    }
+
+    .hospitality-container {
+        margin: 0 0 20px 0;
+    }
+
+    .all-card-container {
+        flex-direction: row;
+    }
+
+    .card-horizontal-container {
+        height: auto;
+        flex: 33%;
+    }
+
+    .card-horizontal-container img {
+        width: 50%;
+    }
+
+    .title-price-star-container {
+        width: 50%;
+    }
+
+    /* Activities cards here*/
+
+    .activity-card img {
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 768px)
 {
     .main {
-        padding: 20px;
+        padding: 20px 20px 0 20px;
     }
 
     .header {
@@ -452,7 +487,8 @@ footer {
     .filter-container  {
         justify-content: space-between;
     }
-    
+
+    /* Disable some feature in desktop view */
     .desktop {
         display: none;
     }
@@ -461,4 +497,36 @@ footer {
         display: flex;
         align-items: center;
     }
+
+    /* Hospitality and popularity cards */
+    .hospitality-popularity-container {
+        flex-direction: column-reverse;
+    }
+
+    .hospitality-container {
+        margin: 0;
+        background-color: white;
+    }
+
+    .popularity-container {
+        border-radius: 0;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+    .all-card-container {
+        flex-direction: column;
+    }
+
+    .card-horizontal-container {
+        flex: auto;
+        height: 180px;
+    }
+
+    .card-horizontal-container img {
+        height: 200px;
+        /*height: 30vw;
+        min-height: 160px */
+    }
+
 }
