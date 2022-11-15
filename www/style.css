@@ -506,12 +506,14 @@ footer {
     .hospitality-container {
         margin: 0;
         background-color: white;
+        padding: 20px;
     }
 
     .popularity-container {
         border-radius: 0;
         margin-right: -20px;
         margin-left: -20px;
+        padding: 20px;
     }
 
     .all-card-container {
@@ -520,13 +522,23 @@ footer {
 
     .card-horizontal-container {
         flex: auto;
-        height: 180px;
     }
 
     .card-horizontal-container img {
         height: 200px;
-        /*height: 30vw;
-        min-height: 160px */
     }
 
+    .card-direction {
+        flex-direction: column;
+    }
+
+    .card-vertical-container {
+        width: auto;
+    }
+
+    /* activitie cards */
+    .activity-card {
+        width: auto;
+    }
+    
 }
