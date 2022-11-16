@@ -9,15 +9,17 @@
     font-style: italic;
 }
 
+:root {
+    --main-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --bg-color: #F2F2F2;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-}
-
-.main {
     font-family: raleway;
     max-width: 1440px;
     margin: 0 auto;
@@ -52,10 +54,10 @@ body {
 }
 
 .nav-ul li:hover {
-    color: #0065FC;
+    color: var(--main-color);
     cursor: pointer;
     border-top-style: solid;
-    border-top-color: #0065FC;
+    border-top-color: var(--main-color)
 }
 
 h1 {
@@ -95,14 +97,14 @@ p {
     font-weight: 700;
     border-left-style: none;
     border-right-style: none;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid var(--bg-color);
+    border-bottom: 1px solid var(--bg-color);
     box-sizing: border-box;
     padding: 0 0 0 16px;
 }
 
 .custom-location-icon {
-    background-color: #F2F2F2;
+    background-color: var(--bg-color);
     width: 48px;
     display: flex;
     flex-shrink: 0;
@@ -112,11 +114,12 @@ p {
 }
 
 .search-submit {
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: white;
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+    align-items: center;
     border: none;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
@@ -172,12 +175,12 @@ p {
 }
 
 .filter:hover {
-    background-color: #DEEBFF;
+    background-color: var(--secondary-color);
     cursor: pointer;
 }
 
 .filter-container li i {
-    color: #0065FC;
+    color: var(--main-color);
     margin-right: 10px;
 }
 
@@ -186,7 +189,7 @@ p {
 }
 
 .info i {
-    color: #0065FC;
+    color: var(--main-color);
     margin-right: 8px;
 }
 
@@ -236,11 +239,11 @@ p {
 .star-notation-container i {
     font-size: 12px;
     margin-right: 2px;
-    color: #0065FC;
+    color: var(--main-color);
 }
 
 .star-notation-container i:last-child {
-    color: #F2F2F2;
+    color: var(--bg-color);
 }
 
 .card-horizontal-container {
@@ -279,7 +282,7 @@ p {
 }
 
 .hospitality-container {
-    background-color: #F2F2F2;
+    background-color: var(--bg-color);
     border-radius: 20px;
     flex: 66%;
     margin-right: 20px;
@@ -287,7 +290,7 @@ p {
 }
 
 .popularity-container {
-    background-color: #F2F2F2;
+    background-color: var(--bg-color);
     border-radius: 20px;
     flex: 33%;
     padding: 40px;
@@ -302,7 +305,7 @@ p {
 }
 
 .title-icon-card-container i {
-    color: #0065FC;
+    color: var(--main-color);
 }
 
 .card-title-container {
@@ -353,7 +356,7 @@ p {
 }
 
 footer {
-    background-color: #F2F2F2;
+    background-color: var(--bg-color);
     margin-top: 60px;
     display: flex;
     padding: 45px 70px 24px 70px;
@@ -432,7 +435,7 @@ footer {
 
 @media screen and (max-width: 768px)
 {
-    .main {
+    body {
         padding: 20px 20px 0 20px;
     }
 
@@ -457,7 +460,7 @@ footer {
     }
 
     .nav-ul li:hover {
-        border-bottom-color: #0065FC;
+        border-bottom-color: var(--main-color);
         border-bottom-style: solid;
         border-top-style: solid;
         border-top-color: white;
