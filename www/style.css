@@ -481,7 +481,6 @@ footer {
         width: 48%;
         padding: 16px;
         margin-right: 0;
-        white-space: normal;
     }
 
     .filter-container  {
@@ -536,9 +535,19 @@ footer {
         width: auto;
     }
 
+    .card-vertical-container img {
+        height: 200px;
+    }
+
     /* activitie cards */
     .activity-card {
         width: auto;
     }
-    
+
+    /* footer */
+    footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        flex-direction: column;
+    }
 }
