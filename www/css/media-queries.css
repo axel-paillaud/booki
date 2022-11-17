@@ -1,0 +1,177 @@
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: flex;
+}
+
+@media screen and (max-width: 992px)
+{
+    h4 {
+        font-size: 14px;
+    }
+
+    .filter {
+        font-size: 14px;
+        padding: 12px 20px;
+        margin-right: 8px;
+    }
+
+    .title-filter-container b {
+        margin-right: 24px;
+    }
+
+    .hospitality-popularity-container {
+        flex-direction: column;
+    }
+
+    .hospitality-container {
+        margin: 0 0 20px 0;
+    }
+
+    .all-card-container {
+        flex-direction: row;
+    }
+
+    .card-horizontal-container {
+        height: auto;
+        flex: 33%;
+    }
+
+    .card-horizontal-container img {
+        width: 50%;
+    }
+
+    .title-price-star-container {
+        width: 50%;
+    }
+
+    /* Activities cards here*/
+
+    .activity-card img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    body {
+        padding: 20px 20px 0 20px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-ul {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .nav-ul li {
+        width: 50%;
+        text-align: center;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+    }
+
+    .nav-ul li:hover {
+        border-bottom-color: var(--main-color);
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-top-color: white;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .title-filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title-filter-container div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filter {
+        width: 48%;
+        padding: 16px;
+        margin-right: 0;
+    }
+
+    .filter-container  {
+        justify-content: space-between;
+    }
+
+    /* Disable some feature in desktop view */
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Hospitality and popularity cards */
+    .hospitality-popularity-container {
+        flex-direction: column-reverse;
+    }
+
+    .hospitality-container {
+        margin: 0;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .popularity-container {
+        border-radius: 0;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 20px;
+    }
+
+    .all-card-container {
+        flex-direction: column;
+    }
+
+    .card-horizontal-container {
+        flex: auto;
+    }
+
+    .card-horizontal-container img {
+        height: 200px;
+    }
+
+    .card-direction {
+        flex-direction: column;
+    }
+
+    .card-vertical-container {
+        width: auto;
+    }
+
+    .card-vertical-container img {
+        height: 200px;
+    }
+
+    /* activitie cards */
+    .activity-card {
+        width: auto;
+    }
+
+    /* footer */
+    footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        flex-direction: column;
+    }
+}

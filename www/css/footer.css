@@ -1,0 +1,29 @@
+footer {
+    background-color: var(--bg-color);
+    margin-top: 60px;
+    display: flex;
+    padding: 45px 70px 24px 70px;
+}
+
+.footer-section {
+    list-style-type: none;
+    padding: 0;
+    flex-basis: 33%;
+    margin: 16px;
+}
+
+.footer-section li:first-child {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer-section li {
+    margin-bottom: 12px;
+}
+
+.title-footer-section {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}

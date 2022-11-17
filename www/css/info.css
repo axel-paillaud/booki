@@ -1,0 +1,8 @@
+.info {
+    margin: 38px 0;
+}
+
+.info i {
+    color: var(--main-color);
+    margin-right: 8px;
+}
