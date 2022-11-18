@@ -83,3 +83,8 @@
     color: var(--main-color);
     margin-right: 10px;
 }
+
+.filter span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

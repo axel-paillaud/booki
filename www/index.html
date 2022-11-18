@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img class="logo" src="images/logo/Booki.png" alt="logo"></a>
+        <a href="index.html"><img class="logo" src="assets/images/logo/Booki.png" alt="logo"></a>
         <nav>
             <ul class="nav-ul">
                 <li><a class="basic-link" href="#anchor-hospitality">Hébergements</a></li>
@@ -26,8 +26,10 @@
         <form class="search-container">
             <i class="fa-solid fa-location-dot custom-location-icon"></i>
             <input class="search-input" type="text" autocomplete="off" placeholder="Marseille, France">
-            <button class="search-submit desktop" type="submit">Rechercher</button>
-            <button class="search-submit mobile" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="search-submit" type="submit">
+                <span class="desktop">Rechercher</span>
+                <span class="mobile"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </button>
         </form>
         <div class="title-filter-container">
             <b>Filtres</b>
@@ -38,7 +40,7 @@
                 </ul>
                 <ul class="filter-container">
                     <li class="filter"><i class="fa-solid fa-heart"></i>Romantique</li>
-                    <li class="filter"><i class="fa-solid fa-dog"></i>Animaux autorisés</li>
+                    <li class="filter"><i class="fa-solid fa-dog"></i><span>Animaux autorisés</span></li>
                 </ul>
             </div>
         </div>
