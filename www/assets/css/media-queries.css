@@ -47,8 +47,6 @@
         width: 50%;
     }
 
-    /* Activities cards here*/
-
     .activity-card img {
         height: 200px;
     }
@@ -60,7 +58,7 @@
         padding: 20px 20px 0 20px;
     }
 
-    .header {
+    header {
         flex-direction: column;
     }
 
