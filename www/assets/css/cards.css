@@ -1,4 +1,8 @@
 /*Css rules for all the cards (hospitalities, popularities and activities cards)*/
+.title-margin {
+    margin-bottom: 32px;
+}
+
 .card-vertical-container {
     display: flex;
     flex-direction: column;
@@ -53,7 +57,7 @@
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: 30%;
+    height: 29%;
     transition: 0.3s;
     text-decoration: none;
     color: black;
@@ -98,11 +102,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 32px;
 }
 
 .title-icon-card-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .title-icon-card-container i {
@@ -139,6 +145,8 @@
 .show-more {
     margin: 16px 0 0 0;
 }
+
+/*Css rules for activities cards start here*/
 
 .activity-card {
     display: flex;

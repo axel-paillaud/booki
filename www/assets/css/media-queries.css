@@ -76,17 +76,17 @@
     .nav-ul li {
         width: 50%;
         text-align: center;
-        border-bottom-color: white;
+        border-bottom-color: var(--bg-color);
         border-bottom-style: solid;
     }
 
-    .nav-ul li:hover {
+    .nav-ul li:hover, .nav-ul li:focus {
         border-bottom-color: var(--main-color);
         border-bottom-style: solid;
         border-top-style: solid;
         border-top-color: white;
     }
-
+    
     .search-input {
         width: 100%;
     }
@@ -136,7 +136,7 @@
         border-radius: 0;
         margin-right: -20px;
         margin-left: -20px;
-        padding: 20px;
+        padding: 32px 20px;
     }
 
     .all-card-container {
