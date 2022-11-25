@@ -1,3 +1,4 @@
+/*Css rules for all the cards (hospitalities, popularities and activities cards)*/
 .card-vertical-container {
     display: flex;
     flex-direction: column;
@@ -10,6 +11,7 @@
     width: 30%;
 }
 
+/*box-shadow effect when hover*/
 .card-vertical-container:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -41,6 +43,7 @@
     color: var(--main-color);
 }
 
+/*Just an example of css rule to have the last notation star grey*/
 .star-notation-container i:last-child {
     color: var(--bg-color);
 }
@@ -118,6 +121,7 @@
     margin: 0;
 }
 
+/*gap rule is use over margin because margin give left and right margin and we only want margin between cards*/
 .all-card-container {
     display: flex;
     flex-direction: column;
@@ -131,6 +135,7 @@
     gap: 32px;
 }
 
+/*For text "Afficher plus"*/
 .show-more {
     margin: 16px 0 0 0;
 }

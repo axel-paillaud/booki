@@ -1,3 +1,4 @@
+/*Css rules for cards filters*/
 .search-container {
     margin: 20px 0 32px 0;
     display: flex;
@@ -12,8 +13,11 @@
     border-right-style: none;
     border-top: 1px solid var(--bg-color);
     border-bottom: 1px solid var(--bg-color);
-    box-sizing: border-box;
     padding: 0 0 0 16px;
+}
+
+.search-input:focus {
+    outline: none;
 }
 
 .custom-location-icon {
@@ -85,6 +89,7 @@
     margin-right: 10px;
 }
 
+/*In case if the text go outside of the filter container, we have ...dot and no overflow*/
 .filter span {
     overflow: hidden;
     text-overflow: ellipsis;

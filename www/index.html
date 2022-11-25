@@ -23,6 +23,7 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
         </section>
+        <!--Search form-->
         <form class="search-container">
             <i class="fa-solid fa-location-dot custom-location-icon"></i>
             <input class="search-input" type="text" autocomplete="off" placeholder="Marseille, France">
@@ -33,6 +34,7 @@
         </form>
         <div class="title-filter-container">
             <b>Filtres</b>
+            <!--All filter here. 2 ul container is use for mobile responsive : display in column with 2 li elements each-->
             <div>
                 <ul class="filter-container">
                     <li class="filter"><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
@@ -52,9 +54,11 @@
                 <div class="card-title-container">
                     <h2>Hébergements à Marseille</h2>
                     <div class="card-direction">
+                        <!--Each <a> tag is a container for one card-->
                         <a class="card-vertical-container" href="#">
                             <img src="assets/images/hebergements/4_small/marcus-loke-unsplash.jpg" alt="Auberge La Canebière">
                             <section class="title-price-card">
+                                <!--All title with paragraph is inside a <section> tag-->
                                 <h3>Auberge La Canebière</h3>
                                 <p>Nuit à partir de 25€</p>
                             </section>
@@ -143,12 +147,14 @@
                 </div>
             </article>
             <!--End of hospitality container-->
+            <!--Popularities cards start here-->
             <article class="popularity-container">
                 <div class="title-icon-card-container">
                     <h2>Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <div class="all-card-container">
+                    <!--Each <a> tag is a container for one card-->
                     <a class="card-horizontal-container" href="#">
                         <img src="assets/images/hebergements/4_small/emile-guillemot-Bj-unsplash.jpg" alt="Hôtel Le soleil du matin">
                         <div class="title-price-star-container">

@@ -1,7 +1,9 @@
+/*border-box over content for all elements because it's more logical for most of the case*/
 * {
     box-sizing: border-box;
 }
 
+/*max-width is to prevent the content to stop grow at 1440px. margin 0 auto is to center the content*/
 body {
     font-family: raleway;
     max-width: 1440px;

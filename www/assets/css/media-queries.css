@@ -1,3 +1,4 @@
+/*Display: none and flex is to show something or not into mobile or desktop mode*/
 .mobile {
     display: none;
 }
@@ -66,6 +67,7 @@
         width: 100%;
     }
 
+    /*Negative margin here because we want border hover effect of nav menu to take all the width screen over the padding*/
     .nav-ul {
         margin-left: -20px;
         margin-right: -20px;
@@ -129,6 +131,7 @@
         padding: 0;
     }
 
+    /*Negative margin here because we want the background to take all the width*/
     .popularity-container {
         border-radius: 0;
         margin-right: -20px;
@@ -166,6 +169,7 @@
     }
 
     /* footer */
+    /*Same here for the margin, we want the background to take all the width*/
     footer {
         margin-left: -20px;
         margin-right: -20px;

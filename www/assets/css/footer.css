@@ -11,6 +11,7 @@ footer {
     margin: 16px;
 }
 
+/*We want the first element of the list to have more bottom margin, because its the title*/
 .footer-section li:first-child {
     margin-bottom: 20px;
     font-weight: 700;
